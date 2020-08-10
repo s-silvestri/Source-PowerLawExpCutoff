@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-8 -fPIC -g  -shared  -o _ExpCutoff.so CMakeFiles/ExpCutoff.dir/ExpCutoff_wrap.cxx.o CMakeFiles/ExpCutoff.dir/ExpCutoff.cpp.o -Wl,-rpath,/home/kibuzo/.local/lib /home/kibuzo/.local/lib/libcrpropa.so -lpython2.7 
