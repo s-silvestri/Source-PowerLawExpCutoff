@@ -1,5 +1,5 @@
 /* name of the plugin: myPlugin*/
-%module(directors="1", threads="4", allprotected="1") expcutoff
+%module(directors="1", threads="1", allprotected="1") expcutoff
 
 /* Exceptions required */
 %include "exception.i"

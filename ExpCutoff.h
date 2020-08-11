@@ -8,12 +8,9 @@
 #include <crpropa/Module.h>
 #include <crpropa/Random.h>
 #include <crpropa/Source.h>
+//#include <crpropa/ParticleState.h>
 
-
-namespace crpropa{
-class ParticleStateExt : public ParticleState{};
-class SourceFeatureExt : public SourceFeature{};
-
+namespace crpropa {
 class SourcePowerLawExpCutoffSpectrum : public SourceFeature {
 	double Emin;
 	double Emax;
@@ -25,10 +22,12 @@ public:
 	void setDescription();
 };
 
-class Randext : public Random{
+
+class Randext : public crpropa::Random{
 	public:
-	Randext();
-	double randPowerLawExpCutoff(double index, double min, double max, double ecut);
 	static Randext& instance();
+	double randPowerLawExpCutoff(double index, double min, double max, double ecut);
+	std::vector <double> CDFbreak(double index, double min, double max, double ecut);
+	double stepIntegratePowerLawExpCutoff(double index, double ecut, double min, double max);
 };
 }

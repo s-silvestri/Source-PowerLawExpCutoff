@@ -1,10 +1,7 @@
 #include "ExpCutoff.h"
 #include <string>
-#include <functional> 
-#include "crpropa/Common.h"
+//#include <functional> 
 #include "crpropa/Units.h"
-#include "crpropa/ParticleID.h"
-//#include "crpropa/base64.h"
 
 // const std::string myPropertyName = "counter";
 
